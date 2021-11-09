@@ -1,0 +1,73 @@
+
+#cabeceralogo {
+    width: 96%;
+    height: 150px;
+    padding: 0% 2%;
+    background-color: #1f8d56;
+    }
+    #cabeceralogo > div {
+    width: 960px;
+    margin: 0px auto;
+    padding-top: 45px;
+    }
+    #cabeceralogo h1 {
+    font: bold 54px Arial, sans-serif;
+    color: #FFFFFF;
+    }
+#menuprincipal {
+width: 96%;
+height: 50px;
+padding: 0% 2%;
+background-color: #1371dd;
+border-top: 1px solid #256c9c;
+border-bottom: 1px solid #256c9c;
+}
+#menuprincipal > div {
+width: 960px;
+margin: 0px auto;
+}
+#menuprincipal li {
+    display: inline-block;
+    height: 35px;
+    padding: 15px 10px 0px 10px;
+    margin-right: 5px;
+    }
+    #menuprincipal li:hover {
+    background-color: #93baec;
+    }
+body{
+    background-color: aquamarine;
+    text-align: center;
+}
+.tablas{
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+input{
+    background-color: rgba(240, 248, 255, 0.212);
+}
+
+input:hover{
+    background-color: rgba(240, 248, 255, 0.603);
+}
+
+button{
+    width: 200px;
+    font-size: 16px;
+    background-color: rgba(13, 154, 236, 0.815);
+    color: aliceblue;
+}
+
+button:hover{
+    width: 215px;
+    background-color: rgba(240, 248, 255, 0.13);
+    color: black;
+}
+
+#div{
+    width: 40%;
+    text-align: center;
+    margin: auto;
+    margin-top: 100px;
+}

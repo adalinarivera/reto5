@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Computador</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <link rel="stylesheet" href="CSS/estilos.css">
+    <script src="jsComputer/guardar.js"></script>
+    <script src="jsComputer/listar.js"></script>
+    <script src="jsComputer/editar.js"></script>
+    <script src="jsComputer/borrar.js"></script>
+    <title>Computador</title>
+</head>
+
+<body>
+  <header id="cabeceralogo">
+    <div>
+    <h1>Alquiler Compuadores </h1>
+    </div>
+    </header>
+    <nav id="menuprincipal">
+    <div>
+    <ul>
+    <li><a href="index.html">Principal</a></li>
+    <li><a href="reportes.html">Reportes</a></li>
+    <li><a href="category.html">Categorias</a></li>
+    <li><a href="client.html">Clientes</a></li>
+    <li><a href="message.html">Mensajes</a></li>
+    <li><a href="reservation.html">Reservaciones</a></li>
+    <li><a href="computer.html">Alquiler Computadores</a></li>
+    </ul>
+    </div>
+    </nav>
+    <table border="1" cellspacing="2" cellpadding="2"></table>
+      <tbody>
+        <tr><input type="hidden" id="numId"></tr>
+        <tr>
+          <td>Nombre</td>
+          <td><input type="text" id="name" placeholder="Nombre" maxlength="45"></td>
+        </tr>
+        <tr>
+          <td>Marca</td>
+          <td><input type="text" id="brand" placeholder="Marca" maxlength="45"></td>
+        </tr>
+        <tr>
+          <td>Año</td>
+          <td><input type="number" id="year" placeholder="Año"></td>
+        </tr>
+        <tr>
+          <td>Descripcion</td>
+          <td><input type="text" id="description" placeholder="Descripcion" maxlength="250"></td>
+        </tr>
+        
+      </tbody>
+    </table>
+    <tr>
+      <td>&nbsp;</td>
+      <button onclick="listarComputer()" id="btnListar">Consultar Computadores</button>
+        <button onclick="actualizarComputer()" id="btnActualizar">Actualizar lo Editado</button>
+        <button onclick="agregarComputer()" id="btnGuardar">Guardar Computador</button>
+    </tr>
+    <br>
+    <hr><br>
+
+    <script type="text/javascript">
+      window.onload = autoInicioCategoria();
+  </script>
+    <div id="listado"></div>
+
+    <h1>Volver al menu principal</h1>
+      <ul>
+        <li><a href="index.html">Menu Principal</a></li>
+        <br>
+        </li>
+      </ul>
+</body>
+
+</html>
